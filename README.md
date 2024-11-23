@@ -1,6 +1,6 @@
-# Laravel 8 強制釋放物件資源
+# Laravel 11 強制釋放物件資源
 
-引入 spatie 的 laravel-artisan-dispatchable 套件來擴增強制釋放物件資源，提供了一個 `Disposable` 介面和 `using()` 全域函數。
+引入 ryangjchandler 的 using 套件來擴增強制釋放物件資源，提供了一個 `Disposable` 介面和 `using()` 全域函數。
 
 ## 使用方式
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
@@ -16,15 +16,11 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
-```sh
-$ npm install && npm run dev
-```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/file` 來讀取文字檔案。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/Td3GK7a.png)
+![](https://i.imgur.com/20YMGea.png)
 > `using` 包裝 try..finally 陳述式的回呼調用，確保無論是否有任何異常都能釋放物件資源
